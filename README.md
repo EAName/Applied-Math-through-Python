@@ -3,6 +3,10 @@ Techniques for building and interpreting mathematical models of real-world pheno
 
 
 
+
+
+
+
 Create and interpret models involving linear functions.
 
 
