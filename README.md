@@ -1,127 +1,85 @@
 # Applied-Math-through-Python
-Techniques for building and interpreting mathematical models of real-world phenomena in and across multiple disciplines, including linear algebra, discrete mathematics, probability, and calculus, with an emphasis on applications in data science and data engineering. 
 
-
-
-
-
-
-
-Create and interpret models involving linear functions.
-
-
-Calculate correlation coefficients and least squares lines.
-
-
-Interpret the meanings of correlation coefficients and least squares lines.
-
-
-Solve systems of linear equations using the Echelon and Gauss-Jordan methods.
-
-
-Manipulate matrices using addition, subtraction and multiplication.
-
-
-Calculate and apply the inverse of matrices.
-
-
-Apply Cramer’s Rule to systems of linear equations.
-
-
-Apply linear programming to real-world problems.
-
-
-Define and understand the meaning and applications of slack variables and the pivot.
-
-
-Solve maximization and minimization problems using the simplex tableau and method.
-
-
-Calculate probabilities and conditional probabilities of different events.
-
-
-Apply the basic concepts of probability to real-world situations.
-
-
-Apply Bayes’ Theorem to find probabilities.
-
-
-Apply permutations and combinations to real-world problems.
-
-
-Solve probability problems using counting principles.
-
-
-Calculate expected values using probability distributions.
-
-
-Create graphs to model real world problems.
-
-
-Represent graphs using incidence matrices.
-
-
-Construct Euler and Hamilton paths and circuits.
-
-
-Solve shortest-path problems.
-
-
-Recognize properties of trees.
-
-
-Calculate limits of various types of functions.
-
-
-Explain the difference between continuous and discontinuous functions and its implications.
-
-
-Calculate the rates of changes of functions over specified intervals.
-
-
-Calculate derivatives of exponential and logarithmic functions, products, quotients, sums and differences.
-
-
-Apply the chain rule to calculate derivatives of composite functions.
-
-
-Create and interpret the graphs of derivatives.
-
-
-Identify increasing and decreasing intervals for functions.
-
-
-Apply the definition of a derivative to interpret characteristics of graphs of functions.
-
-
-Use higher derivatives to define concavity and inflection points in graphs.
-
-
-Apply derivatives to real-world problems.
-
-
-Calculate antiderivatives.
-
-
-Calculate integrals of exponential and logarithmic functions, products, quotients, sums, and differences.
-
-
-Apply integration by substitution and integration by parts.
-
-
-Interpret the relationship between integrals and the area under a curve.
-
-
-Apply the Fundamental Theorem of Calculus to real- world problems.
-
-
-Evaluate functions of several variables.
-
-
-Solve applications involving partial derivatives.
-
-
-Identify relative extrema and saddle points.
-
-
-Use Lagrange multipliers to optimize functions subject to constraints.
+Graduate coursework applying linear algebra, discrete mathematics, probability, calculus, and optimization through Python notebooks for data science and engineering foundations.
+
+---
+
+## 1. Title and Summary
+
+**Applied Math through Python**  
+Northwestern University M.S. in Data Science (Data Engineering specialization): computational exploration of mathematical models across algebra, probability, graph theory, single- and multivariable calculus, and linear programming using NumPy, SciPy, SymPy, PuLP, and matplotlib.
+
+---
+
+## 2. Concepts and Methods
+
+- **Python numerics foundations:** integer vs. float division, modulo, assignment and expression evaluation (`Basic Calculations.ipynb`)
+- **Linear functions and modeling:** slope-intercept lines, break-even analysis, plotting with `linspace` (`Slopes and Lines.ipynb`); correlation coefficient and least-squares line via `scipy.stats.linregress`
+- **Linear systems and inequalities:** graph feasible regions for LP constraints; evaluate objective at corner points with NumPy matrices (`Graphing Linear Systems.ipynb`, `Graphing Linear Inequalities.ipynb`, `Solving LP Models Graphically.ipynb`, `More on LP Models.ipynb`)
+- **Linear programming solvers:** `scipy.optimize.linprog` (simplex method) and PuLP formulation/solve for max/min problems (`Solving LP Models Using Pulp or SciPy.ipynb`)
+- **Matrix algebra:** NumPy arrays, matrix operations, determinants, inverses, solving Ax=b with `numpy.linalg.inv` and `linalg.solve` (`Matrix Operations.ipynb`, `Matrix Inverses.ipynb`)
+- **Set theory and probability:** universe generation, set operations, union/intersection probabilities, conditional probability on finite sample spaces (`Sets and Probability.ipynb`)
+- **Counting:** recursive factorial, permutations, combinations (`Counting Principles.ipynb`)
+- **Continuous probability:** random sampling, histogram binning, empirical distribution exploration (`Continuous Probability.ipynb`); normal CDF via Simpson's rule integration and shaded area plots (`Normal Distribution.ipynb`)
+- **Discrete math / graph theory:** custom `Node` and `Graph` classes; adjacency dictionaries; shortest-path search; tree detection (`Graph Theory.ipynb`)
+- **Limits and continuity:** numerical limit approximation by shrinking delta; limits at infinity (`Limits.ipynb`)
+- **Differentiation:** secant-to-tangent limiting slopes, derivative interpretation, higher-order derivatives (`Rates of Change.ipynb`, `Higher Order Derivatives.ipynb`); relative/absolute extrema with NumPy arrays and matplotlib (`Relative and Absolute Extrema.ipynb`)
+- **Integration:** numerical integration routines; Fundamental Theorem applications; area under curves (`Fundamental Theorem of Calculus.ipynb`, `Area and the Definite Integral.ipynb`)
+- **Multivariable calculus:** partial derivatives, critical points via SymPy `linsolve`/`nonlinsolve`, Lagrange multipliers for constrained optimization (`Multivariable Calculus Practice.ipynb`)
+
+**Course syllabus topics not clearly represented in committed notebooks:** Gauss-Jordan/Echelon elimination, Cramer's Rule, simplex tableau by hand, slack variables/pivot mechanics, Bayes' Theorem, expected value calculations, Euler/Hamilton paths, incidence matrices [VERIFY whether covered in uncommitted assignments or other repos]
+
+**Out of scope for this repo:** production optimization coursework at scale (see **Decision-Analytics**); statistical inference and experimental design (see **Statistics**); cloud data systems (see **Systems-Engineering**); CS data structures (see **Programming-with-Python**).
+
+---
+
+## 3. Stack
+
+| Layer | Tools |
+|-------|-------|
+| Language | Python 3 |
+| Environment | Jupyter Notebook |
+| Numerics | NumPy |
+| Symbolic math | SymPy (`symbols`, `diff`, `linsolve`, `nonlinsolve`, Lagrange systems) |
+| Optimization | SciPy `optimize.linprog`, PuLP |
+| Statistics | SciPy `stats.linregress` |
+| Visualization | matplotlib |
+
+---
+
+## 4. Structure
+
+```
+Applied-Math-through-Python/
+├── Basic Calculations.ipynb
+├── Slopes and Lines.ipynb
+├── Graphing Linear Systems.ipynb
+├── Graphing Linear Inequalities.ipynb
+├── Solving LP Models Graphically.ipynb
+├── Solving LP Models Using Pulp or SciPy.ipynb
+├── More on LP Models.ipynb
+├── Matrix Operations.ipynb
+├── Matrix Inverses.ipynb
+├── Sets and Probability.ipynb
+├── Counting Principles.ipynb
+├── Continuous Probability.ipynb
+├── Normal Distribution.ipynb
+├── Graph Theory.ipynb
+├── Limits.ipynb
+├── Rates of Change.ipynb
+├── Higher Order Derivatives.ipynb
+├── Relative and Absolute Extrema.ipynb
+├── Fundamental Theorem of Calculus.ipynb
+├── Area and the Definite Integral.ipynb
+├── Multivariable Calculus Practice.ipynb
+└── README.md
+```
+
+- **Organization:** flat notebook sequence aligned to course modules (algebra → probability → discrete math → calculus → multivariable)
+- **Reusable modules:** counting helpers and graph `Node`/`Graph` classes defined inline in notebooks
+- **Engineering practice:** numerical limits and integrals as computational substitutes for closed form; corner-point LP evaluation; solver-backed LP verification; OOP graph abstractions for path and tree queries
+
+---
+
+**Course context:** Northwestern University, M.S. in Data Science, Data Engineering specialization  
+**Repository:** https://github.com/EAName/Applied-Math-through-Python
