@@ -27,7 +27,7 @@ Northwestern University M.S. in Data Science (Data Engineering specialization): 
 - **Integration:** numerical integration routines; Fundamental Theorem applications; area under curves (`Fundamental Theorem of Calculus.ipynb`, `Area and the Definite Integral.ipynb`)
 - **Multivariable calculus:** partial derivatives, critical points via SymPy `linsolve`/`nonlinsolve`, Lagrange multipliers for constrained optimization (`Multivariable Calculus Practice.ipynb`)
 
-**Course syllabus topics not clearly represented in committed notebooks:** Gauss-Jordan/Echelon elimination, Cramer's Rule, simplex tableau by hand, slack variables/pivot mechanics, Bayes' Theorem, expected value calculations, Euler/Hamilton paths, incidence matrices [VERIFY whether covered in uncommitted assignments or other repos]
+**Course syllabus topics not clearly represented in committed notebooks:** Gauss-Jordan/Echelon elimination, Cramer's Rule, simplex tableau by hand, slack variables/pivot mechanics, Bayes' Theorem, expected value calculations, Euler/Hamilton paths, incidence matrices
 
 **Out of scope for this repo:** production optimization coursework at scale (see **Decision-Analytics**); statistical inference and experimental design (see **Statistics**); cloud data systems (see **Systems-Engineering**); CS data structures (see **Programming-with-Python**).
 
