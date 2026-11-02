@@ -1,6 +1,0 @@
-numpy<2
-scipy
-sympy
-pulp
-matplotlib
-jupyter
