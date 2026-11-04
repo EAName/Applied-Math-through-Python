@@ -77,5 +77,23 @@ Applied-Math-through-Python/
 
 ---
 
+## Additional notebooks
+
+Worked applied problems in `analyses/`:
+
+- `analyses/linear-functions-and-regression.ipynb`: linear models, correlation coefficients and least-squares lines with SciPy, NumPy and SymPy
+- `analyses/linear-systems-and-matrices.ipynb`: two- and three-variable linear systems, matrix products, inverses and Cramer's rule
+- `analyses/linear-programming-pulp.ipynb`: feasible regions and maximization and minimization models solved with PuLP
+- `analyses/probability-and-counting.ipynb`: contingency-table probabilities, Bayes' theorem, counting and expected value
+- `analyses/weighted-graph-shortest-paths.ipynb`: shortest paths on weighted graphs with custom `Node` and `Graph` classes
+- `analyses/limits-and-derivatives.ipynb`: limits and rates of change for growth, revenue, cost and periodic models with SymPy
+- `analyses/derivatives-and-optimization.ipynb`: relative extrema, concavity and maximizing a sales function
+- `analyses/integrals-and-applications.ipynb`: definite integrals for accumulated change and exponential probabilities
+- `analyses/multivariable-optimization.ipynb`: partial derivatives and constrained cost minimization and production maximization
+- `analyses/break-even-and-investment-systems.ipynb`: break-even analysis and a three-variable investment system
+- `analyses/applied-math-word-problems.ipynb`: regression, linear systems, LP, Bayes' theorem, derivatives, integrals, distributions and constrained optimization in applied word problems
+
+---
+
 **Course context:** Northwestern University, M.S. in Data Science, Data Engineering specialization  
 **Repository:** https://github.com/EAName/Applied-Math-through-Python
